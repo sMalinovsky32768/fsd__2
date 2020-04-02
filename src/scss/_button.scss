@@ -1,0 +1,38 @@
+.button {
+    padding: 10px 20px;
+    background: $primary-gradient;
+    border-radius: 22px;
+    margin: auto 10px;
+    @each $pr, $val in map-get($map: $font-map, $key: h3) {
+        @if $pr!=color {
+            #{$pr}: $val;
+        }
+    }
+    &_transparent,
+    &:hover {
+        background: $primary-gradient;
+        color: $primary;
+        display: inline-block;
+        padding: 9.5px 2px;
+        span {
+            background: #fff;
+            padding: 8px 18px;
+            border-radius: 20px;
+        }
+    }
+    &_transparent:hover {
+        padding: 10px 20px;
+        background: $primary-gradient;
+        border-radius: 22px;
+        margin: auto 10px;
+        color: #fff;
+        span {
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+        }
+    }
+    color: #ffffff;
+    text-decoration: $menu-text-decoration;
+}
+
