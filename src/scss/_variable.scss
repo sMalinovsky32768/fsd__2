@@ -109,10 +109,14 @@ $font-map: (
 
 $content-margin-x: auto;
 $content-margin-y: auto;
+$content-padding-x: 140px;
+$content-padding-y: auto;
 
 %content-size {
     max-width: 1440px;
     margin-left: $content-margin-x;
     margin-right: $content-margin-x;
+    padding-left: $content-padding-x;
+    padding-right: $content-padding-x;
 }
 
