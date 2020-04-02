@@ -1,0 +1,118 @@
+// Colors
+
+$dark-shade-100: rgba(31, 32, 65, 1);
+$dark-shade-75: transparentize($dark-shade-100, 0.25);
+$dark-shade-50: transparentize($dark-shade-100, 0.5);
+$dark-shade-25: transparentize($dark-shade-100, 0.75);
+$dark-shade-5: transparentize($dark-shade-100, 0.95);
+$primary: rgba(188, 156, 255, 1);
+$secondary: rgba(111, 207, 151, 1);
+
+// Gradient
+
+$primary-gradient: linear-gradient(180deg, $primary 0%, #8BA4F9 100%);
+$secondary-gradient: linear-gradient(180deg, $secondary 0%, #66D2EA 100%);
+
+$color-map: (
+    dark100: $dark-shade-100,
+    dark75: $dark-shade-75,
+    dark50: $dark-shade-50,
+    dark25: $dark-shade-25,
+    dark5: $dark-shade-5,
+    primary: $primary,
+    secondary: $secondary,
+    primaryGr: $primary-gradient,
+    secondaryGr: $secondary-gradient,
+);
+
+// Font
+
+$h1-line-height: 30px;
+$h1-font-size: 24px;
+$h1-font-weight: bold;
+$h1-text-transform: none;
+$h1-font-family: 'Quicksand';
+
+$h2-line-height: 24px;
+$h2-font-size: 19px;
+$h2-font-weight: bold;
+$h2-text-transform: none;
+$h2-font-family: 'Quicksand';
+
+$h3-line-height: 15px;
+$h3-font-size: 12px;
+$h3-font-weight: bold;
+$h3-text-transform: uppercase;
+$h3-font-family: 'Montserrat';
+
+$h-color: $dark-shade-100;
+
+$line-height: 24px;
+$font-size: 14px;
+$font-weight: normal;
+$text-transform: none;
+$font-family: 'Montserrat';
+$color: $dark-shade-75;
+
+$menu-line-height: 17px;
+$menu-font-size: 14px;
+$menu-font-weight: normal;
+$menu-text-transform: none;
+$menu-text-decoration: none;
+$menu-font-family: 'Montserrat';
+$menu-color: $dark-shade-50;
+
+$menu-active-line-height: 17px;
+$menu-active-font-size: 14px;
+$menu-active-font-weight: bold;
+$menu-active-text-transform: none;
+$menu-active-text-decoration: none;
+$menu-active-font-family: 'Montserrat';
+$menu-active-color: opacify($color: $menu-color, $amount: 0.25);
+
+$font-map: (
+    h1: (
+        line-height: $h1-line-height,
+        font-size: $h1-font-size,
+        font-weight: $h1-font-weight,
+        font-family: $h1-font-family,
+        text-transform: $h1-text-transform,
+        color: $h-color,
+    ),
+    h2: (
+        line-height: $h2-line-height,
+        font-size: $h2-font-size,
+        font-weight: $h2-font-weight,
+        font-family: $h2-font-family,
+        text-transform: $h2-text-transform,
+        color: $h-color,
+    ),
+    h3: (
+        line-height: $h3-line-height,
+        font-size: $h3-font-size,
+        font-weight: $h3-font-weight,
+        font-family: $h3-font-family,
+        text-transform: $h3-text-transform,
+        color: $h-color,
+    ),
+    body: (
+        line-height: $line-height,
+        font-size: $font-size,
+        font-weight: $font-weight,
+        font-family: $font-family,
+        text-transform: $text-transform,
+        color: $color,
+    ),
+);
+
+// Other
+
+$content-margin-x: auto;
+$content-margin-y: auto;
+
+%content-size {
+    max-width: 1440px;
+    margin-left: $content-margin-x;
+    margin-right: $content-margin-x;
+}
+
