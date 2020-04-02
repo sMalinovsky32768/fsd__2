@@ -114,6 +114,7 @@ $content-padding-y: auto;
 
 %content-size {
     max-width: 1440px;
+    box-sizing: border-box;
     margin-left: $content-margin-x;
     margin-right: $content-margin-x;
     padding-left: $content-padding-x;
