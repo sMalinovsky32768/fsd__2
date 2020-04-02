@@ -1,0 +1,8 @@
+input,
+button {
+    @each $pr, $val in map-get($map: $font-map, $key: body) {
+        @if $pr!=color {
+            #{$pr}: $val;
+        }
+    }
+}
