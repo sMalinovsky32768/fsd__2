@@ -1,0 +1,13 @@
+body {
+    height: 100%;
+    margin: 0 auto;
+}
+
+@each $property, $value in $font-map {
+    #{$property}, .#{$property} {
+        @each $pr, $val in $value {
+            #{$pr}: $val;
+        }
+    }
+}
+
