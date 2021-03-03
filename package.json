@@ -21,7 +21,7 @@
   "homepage": "https://github.com/sMalinovsky32768/fsd__2#readme",
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "sass": "^1.26.3"
   }
 }
